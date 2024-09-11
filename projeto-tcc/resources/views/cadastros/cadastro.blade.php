@@ -10,7 +10,7 @@
 <h1 class="text-2xl">Página de Cadastro</h1>
 
 
-<form action="/cadastros/recCadastro" method="POST" class="place-content-center m-1 flex flex-col bg-slate-500 p-5 rounded-lg shadow-md">
+<form action="/cadastros/recCadastro" method="POST" class="place-content-center m-1 flex flex-col bg-slate-500 p-5 rounded-lg shadow-md w-3/4">
     @csrf 
 
     <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="m-1 p-1 rounded">

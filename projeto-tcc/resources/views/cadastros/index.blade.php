@@ -16,6 +16,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+
 }
 
 header {
@@ -163,6 +164,7 @@ footer {
         </section>
 
        
+    </main>
 
     <footer>
         <p>&copy; 2024 Projeto de TCC. Todos os direitos reservados.</p>
