@@ -28,7 +28,7 @@
 
     <form id="formulario"action="/cadastros/recCadastro" method="POST" class=" flex flex-col bg-slate-50 p-5 rounded-2xl shadow-md w-7/12 ml-4 ">
         @csrf
-        <h2 class="text-2xl font-bold font-mono text-center mb-4">Registre-se</h2>
+        <h2 class="text-2xl font-bold font-mono text-center mb-4">Cadastre-se</h2>
 
         <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="m-1 p-1 rounded-lg border border-zinc-500 w-4/6 self-center">
     
