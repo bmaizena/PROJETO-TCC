@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     @vite('resources/css/app.css')
     <title>Document</title>
+   
     <style>
         * {
     margin: 0;
@@ -132,39 +133,101 @@ footer {
     .contact form {
         width: 100%;
     }
+
+    #menuFunc {
+        flex-direction: column
+    }
+
 }
     </style>
 </head>
 <body>
 
-    <header class=" bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-cyan-400 hover:to-blue-400 ">
+    <header class=" bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-cyan-400 hover:to-blue-400 relative">
         <nav>
+            
             <ul>
-                <li><a href="#home" class=" hover:text-slate-700 transition duration-150 ease-in-out ">Início</a></li>
+                <li id="logo" class="absolute top-2 left-2"><img src="/logo-bus-cortado.png" alt="onibus" width="75px"></li>
+                <li id="logo-text" class="absolute left-20 top-5 text-2xl ">BUS.IO</li>
+                <li><a href="#home" class=" hover:text-slate-700 transition duration-150 ease-in-out">Início</a></li>
+
                 <li><a href="#historia" class=" hover:text-slate-700 transition duration-150 ease-in-out ">História do Tema</a></li>
+
                 <li><a href="#ideia" class=" hover:text-slate-700 transition duration-150 ease-in-out ">Como Surgiu a Ideia</a></li>
+
                 <li><a href="/cadastros/cadastro"  class=" hover:text-slate-700 transition duration-150 ease-in-out ">Cadastro</a></li>
             </ul>
         </nav>
         <section id="home" class="hero">
-            <h1>Bem-vindo ao Projeto de TCC</h1>
-            <p>Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
+            <h1>Bus.IO</h1>
+            <p >Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
         </section>
     </header>
 
     <main>
         <section id="historia" class="content">
-            <h2>História do Tema</h2>
-            <p>O tema do projeto de TCC foi desenvolvido a partir de uma profunda pesquisa sobre ...</p>
+            <h2>Sobre o Aplicativo</h2>
+                <p class="text-justify">
+        O aplicativo é uma solução completa para facilitar a vida dos usuários
+        que dependem do transporte público. Ele oferece recursos como localização dos
+        pontos de ônibus, consulta dos próximos horários e valores de passagem, previsão de
+        chegada do ônibus. Além disso, os usuários podem carregar um passe mensalmente,
+        válido para utilizar em qualquer ônibus de qualquer cidade, tornando o processo mais
+        conveniente e econômico
+                </p>
         </section>
 
         <section id="ideia" class="content">
             <h2>Como Surgiu a Ideia</h2>
-            <p>A ideia do projeto surgiu quando identificamos a necessidade de ...</p>
+            <p>A necessidade de um aplicativo para os usuários se
+                mostrou indispensável, Através da pesquisa, diagnostica-se que a maioria dos usuários
+                de transporte público, enfrentam ou já enfrentaram dificuldade no uso dos ônibus, como o
+                fato de chegar atrasado ou não saber qual o horário exato que irá passar no ponto de
+                parada</p>
         </section>
-
-       
     </main>
+
+    <div class="flex flex-row justify-center" id="menuFunc">
+
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 rounded-lg shadow-xl text-center">
+            <h1><b>Localização de Pontos de Ônibus</b></h1>
+            <p>Os usuários podem facilmente encontrar os
+                pontos de ônibus mais próximos de sua localização atual usando o aplicativo.
+            </p>
+        </div>
+
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2  rounded-lg shadow-xl text-center">
+            <h1><b>Consulta de Horários</b></h1>
+            <p>Os horários de partida e chegada dos ônibus estão disponíveis
+            para consulta, permitindo que os usuários planejem suas viagens com antecedência.
+            </p>
+        </div>
+
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 text-center rounded-lg shadow-xl">
+            <h1><b>Valores de Passagem</b></h1>
+            <p>Os preços das passagens de ônibus são exibidos no aplicativo,
+            ajudando os usuários a gerenciarem seus gastos com transporte.
+            </p>
+        </div>
+
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 text-center rounded-lg shadow-xl">
+            <h1><b>Compra de Passagem Online</b></h1>
+            <p>O aplicativo oferece a conveniência de comprar
+            passagens de ônibus diretamente pelo smartphone, eliminando a necessidade de
+            esperar em filas.
+        </p>
+        </div>
+        
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 text-center rounded-lg shadow-xl">
+            <h1><b>Passe Mensal</b></h1>
+            <p> Os usuários têm a opção de carregar um passe mensal, válido para
+            uso em qualquer ônibus de qualquer cidade atendida pelo serviço, proporcionando
+            economia e flexibilidade.
+            </p>
+            </div>
+    </div>
+
+   
 
     <footer>
         <p>&copy; 2024 Projeto de TCC. Todos os direitos reservados.</p>
@@ -173,4 +236,6 @@ footer {
 
     
 </body>
+
+
 </html>

@@ -16,7 +16,7 @@
 <body class="bg-zinc-300 grid justify-items-center">
 
 
-<main class=" bg-gradient-to-r from-blue-950 to-blue-700 grid justify-items-end rounded-2xl shadow-2xl relative border border-slate-50 mt-9 ">
+<main class=" bg-gradient-to-r from-blue-950 to-blue-700 grid justify-items-end rounded-2xl shadow-2xl relative border border-slate-50 mt-9">
     <div class="absolute top-6 left-8 ">
         <h1 class="font-thin text-6xl text-slate-50 ml-3">BUS.IO</h1>
         <p class="font-thin text-lg text-slate-50 ml-1">Seu ônibus na palma da sua mão</p>
