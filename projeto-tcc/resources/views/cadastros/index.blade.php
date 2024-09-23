@@ -47,6 +47,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     background: url('background.jpg') no-repeat center center/cover;
     color: white;
+    display: flex; 
 }
 
 .hero h1 {
@@ -143,12 +144,11 @@ footer {
 </head>
 <body>
 
-    <header class=" bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-cyan-400 hover:to-blue-400 relative">
-        <nav>
-            
-            <ul>
-                <li id="logo" class="absolute top-2 left-2"><img src="/logo-bus-cortado.png" alt="onibus" width="75px"></li>
-                <li id="logo-text" class="absolute left-20 top-5 text-2xl ">BUS.IO</li>
+    <header class="pt-0 bg-gradient-to-r from-blue-950 to-blue-700 hover:from-blue-800 hover:to-blue-600 relative">
+        <nav class="bg-blue-950 border-b-2 h-16">
+            <ul class="pt-4">
+                <li id="logo" class="absolute top-2 left-2"><img src="/logo-bus-cortado.png" alt="onibus" width="65px"></li>
+                <li id="logo-text" class="absolute left-20 top-4 text-2xl ">BUS.IO</li>
                 <li><a href="#home" class=" hover:text-slate-700 transition duration-150 ease-in-out">Início</a></li>
 
                 <li><a href="#historia" class=" hover:text-slate-700 transition duration-150 ease-in-out ">História do Tema</a></li>
@@ -159,8 +159,12 @@ footer {
             </ul>
         </nav>
         <section id="home" class="hero">
-            <h1>Bus.IO</h1>
-            <p >Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
+            <img src="/bus-img-1.jpg" alt="Imagem ônibus" class="w-1/3 rounded-3xl ml-14 mt-7">
+            <div class="ml-32 mt-10 font">
+                <h1 class="text-9xl">BUS.IO</h1>
+                <br>
+                <p>Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
+            </div>
         </section>
     </header>
 
@@ -189,7 +193,7 @@ footer {
 
     <div class="flex flex-row justify-center" id="menuFunc">
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 rounded-lg shadow-xl text-center">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-900 to-blue-700 m-3 p-2 rounded-lg shadow-xl text-center">
             <h1><b>Localização de Pontos de Ônibus</b></h1>
             <p>Os usuários podem facilmente encontrar os
                 pontos de ônibus mais próximos de sua localização atual usando o aplicativo.
