@@ -122,18 +122,23 @@ footer {
     nav ul {
         flex-direction: column;
     }
+    
+    main{
+        margin: auto;
+    }
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .content {
+        margin-bottom: 20px;
     }
 
     .content h2 {
         font-size: 1.5rem;
     }
 
-    .contact form {
-        width: 100%;
-    }
 
     #menuFunc {
         flex-direction: column
