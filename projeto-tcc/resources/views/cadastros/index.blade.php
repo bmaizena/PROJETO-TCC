@@ -7,14 +7,15 @@
     <title>Document</title>
    
     <style>
-        * {
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 
@@ -22,9 +23,12 @@ body {
 
 header {
     color: white;
-    padding: 1rem 0;
+    padding: 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
+
 
 nav ul {
     list-style: none;
@@ -39,24 +43,35 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
+
+
+
 
 .hero {
     padding: 50px 20px;
-    background: url('background.jpg') no-repeat center center/cover;
     color: white;
-    display: flex; 
+  
+}
+
+#home {
+    background: url('/bus-img-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+ 
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-shadow: black 1px 0 20px;
+    
+    
 }
 
 .hero p {
     font-size: 1.2rem;
+    text-shadow: black 1px 0 20px;
 }
 
 main {
@@ -71,44 +86,20 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #333;
+    text-align: center;
 }
 
 .content p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #666;
+    
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact input, 
-.contact textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.contact button:hover {
-    background-color: #45a049;
-}
 
 footer {
     text-align: center;
@@ -116,7 +107,24 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 20px;
+
 }
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
 
 @media (max-width: 768px) {
     nav ul {
@@ -126,6 +134,11 @@ footer {
     main{
         margin: auto;
     }
+
+    header{
+        text-align: center;
+    }
+
 
     .hero h1 {
         font-size: 2rem;
@@ -139,36 +152,58 @@ footer {
         font-size: 1.5rem;
     }
 
-
-    #menuFunc {
-        flex-direction: column
+    
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
     }
+
+    #menu.active {
+        display: flex;
+    }
+    #hamburger {
+        display: block;
+    }
+    
+
 
 }
     </style>
 </head>
 <body>
 
-    <header class="pt-0 bg-gradient-to-r from-blue-950 to-blue-700 hover:from-blue-800 hover:to-blue-600 relative">
+    <header class="pt-0 bg-gradient-to-r from-blue-800 to-blue-700 hover:from-blue-700 hover:to-blue-800 relative">
+        
         <nav class="bg-blue-950 border-b-2 h-16">
-            <ul class="pt-4">
+            <ul class="pt-4" id="menu">
                 <li id="logo" class="absolute top-2 left-2"><img src="/logo-bus-cortado.png" alt="onibus" width="65px"></li>
-                <li id="logo-text" class="absolute left-20 top-4 text-2xl ">BUS.IO</li>
-                <li><a href="#home" class=" hover:text-slate-700 transition duration-150 ease-in-out">Início</a></li>
+                
+                <li><a href="#home" class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">Início</a></li>
 
-                <li><a href="#historia" class=" hover:text-slate-700 transition duration-150 ease-in-out ">História do Tema</a></li>
+                <li><a href="#historia" class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">História do Tema</a></li>
 
-                <li><a href="#ideia" class=" hover:text-slate-700 transition duration-150 ease-in-out ">Como Surgiu a Ideia</a></li>
+                <li><a href="#ideia" class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">Como Surgiu a Ideia</a></li>
 
-                <li><a href="/cadastros/cadastro"  class=" hover:text-slate-700 transition duration-150 ease-in-out ">Cadastro</a></li>
+                <li><a href="#menuFunc" class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">Funcionalidades</a></li>
+
+                <li><a href="/cadastros/cadastro"  class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">Cadastro</a></li>
+
+                <li id="logo-text" class="absolute right-4 top-4 text-2xl ">BUS.IO</li>
             </ul>
+            <div id="hamburger">&#9776;</div>
         </nav>
-        <section id="home" class="hero">
-            <img src="/bus-img-1.jpg" alt="Imagem ônibus" class="w-1/3 rounded-3xl ml-14 mt-7">
-            <div class="ml-32 mt-10 font">
-                <h1 class="text-9xl">BUS.IO</h1>
+        
+        <section id="home" class="hero"> 
+            <div>
+                <h1 class="text-9xl text-center font-semibold text-neutral-100">BUS.IO</h1>
                 <br>
-                <p>Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
+                <p class=" text-neutral-100 font-semibold">Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
             </div>
         </section>
     </header>
@@ -188,38 +223,33 @@ footer {
 
         <section id="ideia" class="content">
             <h2>Como Surgiu a Ideia</h2>
-            <p>A necessidade de um aplicativo para os usuários se
-                mostrou indispensável, Através da pesquisa, diagnostica-se que a maioria dos usuários
-                de transporte público, enfrentam ou já enfrentaram dificuldade no uso dos ônibus, como o
-                fato de chegar atrasado ou não saber qual o horário exato que irá passar no ponto de
-                parada</p>
+            <p>A criação de um aplicativo voltado para os usuários de transporte público revelou-se indispensável. Através de pesquisas, identificamos que a maioria dos passageiros enfrenta ou já enfrentou dificuldades ao utilizar o transporte coletivo, como chegar atrasado ou não saber o horário exato em que o ônibus passará no ponto</p>
         </section>
-    </main>
 
-    <div class="flex flex-row justify-center" id="menuFunc">
-
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-900 to-blue-700 m-3 p-2 rounded-lg shadow-xl text-center">
+        <section  id="menuFunc" class="content">
+        <h2>Funcionalidades</h2>
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 rounded-lg shadow-xl text-center">
             <h1><b>Localização de Pontos de Ônibus</b></h1>
-            <p>Os usuários podem facilmente encontrar os
+            <p class="text-slate-950">Os usuários podem facilmente encontrar os
                 pontos de ônibus mais próximos de sua localização atual usando o aplicativo.
             </p>
         </div>
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2  rounded-lg shadow-xl text-center">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2  rounded-lg shadow-xl text-center">
             <h1><b>Consulta de Horários</b></h1>
             <p>Os horários de partida e chegada dos ônibus estão disponíveis
             para consulta, permitindo que os usuários planejem suas viagens com antecedência.
             </p>
         </div>
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 text-center rounded-lg shadow-xl">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl">
             <h1><b>Valores de Passagem</b></h1>
             <p>Os preços das passagens de ônibus são exibidos no aplicativo,
             ajudando os usuários a gerenciarem seus gastos com transporte.
             </p>
         </div>
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 text-center rounded-lg shadow-xl">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl">
             <h1><b>Compra de Passagem Online</b></h1>
             <p>O aplicativo oferece a conveniência de comprar
             passagens de ônibus diretamente pelo smartphone, eliminando a necessidade de
@@ -227,16 +257,17 @@ footer {
         </p>
         </div>
         
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-400 to-cyan-400 m-3 p-2 text-center rounded-lg shadow-xl">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl">
             <h1><b>Passe Mensal</b></h1>
             <p> Os usuários têm a opção de carregar um passe mensal, válido para
             uso em qualquer ônibus de qualquer cidade atendida pelo serviço, proporcionando
             economia e flexibilidade.
             </p>
-            </div>
-    </div>
+        </div>
+    </section>
+    </main>
 
-   
+
 
     <footer>
         <p>&copy; 2024 Projeto de TCC. Todos os direitos reservados.</p>
@@ -244,7 +275,30 @@ footer {
 
 
     
+
+    
 </body>
 
 
 </html>
+
+
+<script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                menu.classList.remove('active');
+                menu.style.display = 'flex'; 
+            } else {
+                menu.style.display = ''; 
+            }
+        });
+    </script>
+

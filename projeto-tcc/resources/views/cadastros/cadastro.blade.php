@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body{
             margin:0;
             padding: 0;
+            font-family: "Montserrat", sans-serif;
         }
+
         
     </style>
     @vite('resources/css/app.css')
@@ -16,7 +19,7 @@
 <body class="bg-zinc-300 grid justify-items-center">
 
 
-<main class=" bg-gradient-to-r from-blue-950 to-blue-700 grid justify-items-end rounded-2xl shadow-2xl relative border border-slate-50 mt-9">
+<main id="mainCad" class=" bg-gradient-to-r from-blue-950 to-blue-700 grid justify-items-end rounded-2xl shadow-2xl relative border border-slate-50 mt-9">
     <div class="absolute top-6 left-8 ">
         <h1 class="font-thin text-6xl text-slate-50 ml-3">BUS.IO</h1>
         <p class="font-thin text-lg text-slate-50 ml-1">Seu ônibus na palma da sua mão</p>
@@ -52,7 +55,12 @@
     
     
         <input type="Submit" value="Cadastrar" class="border border-zinc-800 shadow-md rounded-lg p-1 mb-0 m-1 cursor-pointer bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-cyan-400 hover:to-blue-400  hover:text-slate-50 transition duration-300 delay-150 hover:delay-300 w-1/2 self-center" >
-        <p class="self-center">ja tem uma conta? <a href="/"><b>Entrar</b></a></p>
+        <p class="self-center">ja tem uma conta? <a href="/" class=" hover:text-cyan-500"><b>Entrar</b></a></p> 
+        <br>
+        <p class="self-center pb-2 hover:text-cyan-500"><a href="/"><b>Página Inicial</b></a></p>
+
+        
+
     </form>
 </main>
 

@@ -3,13 +3,10 @@
 @tailwind utilities;
 
 @media screen and (min-width: 0px) and (max-width:650px) {
-    main{
+    #mainCad{
         width: 450px;
         height: 79vh;
       
-        
-        
-       
         
     }
 
