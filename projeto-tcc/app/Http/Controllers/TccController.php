@@ -20,6 +20,11 @@ public function cadastro(){
     return view('cadastros.cadastro');
 }
 
+public function login(){
+    return view('cadastros.login');
+}
+
+
 //rota com ação de salvar um serviço
 public function recCadastro(Request $request){
     BusioClientes::create(
