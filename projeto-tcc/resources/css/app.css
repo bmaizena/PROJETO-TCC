@@ -18,19 +18,31 @@
         transition-timing-function: ease-in-out;
     }
     #imagem{
+        
         width: 385px;
         transition: width 0.2s, height 0.2s;
         transition-timing-function: ease-in-out;
         
     }
+    #acess {
+        bottom: 47vh;
+    }
+
+    #alertDiv{
+        margin-top: 50px;
+    }
     
 }
 
 @media screen and (min-width: 651px) and (max-width:1920px) {
+
     #mainCad{
-        min-width: 900px;
+        width: 900px;
         transition: width 0.3s, height 0.3s;
         transition-timing-function: ease-in-out;
     }
-    
+    #imagem {
+       pointer-events: none;
+        
+    }
 }
