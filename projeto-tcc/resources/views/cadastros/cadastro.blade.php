@@ -28,13 +28,9 @@
         <img src="/bus.io.png" alt="bus" class="w-10/12 ml-1 mt-2">
     </div>
 
-
-    <div class="absolute bottom-2 left-2" id="acess">
+    <div class="absolute bottom-2 left-2 abosolute" id="acess">
         <a href="/cadastros/login" class="font-thin text-slate-50 ml-1 hover:text-green-500 text-xs">Acesso Restrito</a>
     </div>
-
-    
-    
 
     <form id="formulario"action="/cadastros/recCadastro" method="POST" class=" flex flex-col bg-slate-50 p-5 rounded-2xl shadow-md w-7/12 ml-4 ">
         @csrf

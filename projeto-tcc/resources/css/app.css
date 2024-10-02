@@ -25,7 +25,9 @@
         
     }
     #acess {
-        bottom: 47vh;
+        position: relative;
+        bottom: -1250%;
+        left: -78%;
     }
 
     #alertDiv{
