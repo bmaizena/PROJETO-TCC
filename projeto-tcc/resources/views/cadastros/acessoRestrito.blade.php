@@ -76,7 +76,7 @@
                     <x-eva-edit-2-outline class=" w-7 m-1 text-ambar-500 hover:text-red-400"/>
                 </a>
                 
-                <a href="#" onclick="deleteTask( {{$cliente-> id}} )">
+                <a href="#" onclick="deleteId( {{$cliente-> id}} )">
                     <x-heroicon-o-trash class="w-7 m-1  text-red-500 hover:text-red-400"/>
                 </a>
                 <form class="d-none" id="form-destroy-{{$cliente->id}}" action="{{ route('cadastros.destroy', $cliente->id ) }}" method="POST">
@@ -89,6 +89,8 @@
            @endforeach
            
         </table>
+        <br>
+        <a href="/cadastros/login" class = "text-center rounded-md bg-blue-600 p-2 text-red-50 shadow-md shadow-blue-700/50 hover:bg-blue-500 ">Voltar</a>
 
         <br>
 
@@ -100,7 +102,7 @@
 
 
 <script>
-    function deleteTask(id){
+    function deleteId(id){
         if(confirm("Tem certeza que deseja EXCLUIR o registro?")){
             document.getElementById('form-destroy-'+id).submit();
         }

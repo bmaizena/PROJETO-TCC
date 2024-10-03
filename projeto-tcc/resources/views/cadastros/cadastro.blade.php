@@ -57,7 +57,7 @@
         <input type="password" name="senha" id="senha" placeholder="Senha" required class="m-1 p-1 rounded-lg border border-zinc-500 w-4/6 self-center">
     
     
-        <input type="Submit" value="Cadastrar" class="border border-zinc-800 shadow-md rounded-lg p-1 mb-0 m-1 cursor-pointer bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-cyan-400 hover:to-blue-400  hover:text-slate-50 transition duration-300 delay-150 hover:delay-300 w-1/2 self-center" >
+        <input type="Submit" value="Cadastrar" class="border border-zinc-800 shadow-md rounded-lg p-1 mb-0 m-1 cursor-pointer bg-gradient-to-r from-blue-950 to-blue-700 hover:from-blue-700 hover:to-blue-950  text-slate-50  hover:text-green-500 transition duration-300 delay-150 hover:delay-300 w-1/2 self-center" >
         <p class="self-center">ja tem uma conta? <a href="/" class=" hover:text-cyan-500"><b>Entrar</b></a></p> 
         <br>
         <p class="self-center pb-2 hover:text-cyan-500"><a href="/"><b>Página Inicial</b></a></p>

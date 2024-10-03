@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 @media screen and (min-width: 0px) and (max-width:650px) {
+    
     #mainCad{
         width: 450px;
         height: 79vh;
-      
+        
         
     }
 
@@ -16,6 +17,7 @@
         margin-top: 301px;
         transition: width 0.1s, height 0.2s;
         transition-timing-function: ease-in-out;
+        
     }
     #imagem{
         
@@ -45,6 +47,8 @@
     }
     #imagem {
        pointer-events: none;
-        
+       
     }
+
+   
 }

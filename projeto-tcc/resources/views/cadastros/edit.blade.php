@@ -70,6 +70,7 @@
                 </div>
 
                 <div class="mb-4 mt-4 flex justify-end gap-2">
+                    
                     <input type="submit" value="Salvar Alterações" class = "rounded-md bg-green-500 p-2 text-indigo-50 shadow-md shadow-indigo-500/50 hover:bg-green-400 min-w-auto"/>
                     <a href="/cadastros/acessoRestrito" class = "text-center rounded-md bg-red-600 p-2 text-red-50 shadow-md shadow-red-700/50 hover:bg-red-500 min-w-auto ">Cancelar</a>
                 </div>
