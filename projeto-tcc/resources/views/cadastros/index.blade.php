@@ -151,6 +151,7 @@ footer {
 
 .accordion-item {
     margin-bottom: 10px;
+    
 }
 .accordion-header {
     background-image: linear-gradient(to right, rgb(37,99,235), rgb(59,130,246));
@@ -162,9 +163,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .accordion-header:hover {
     background-image: linear-gradient(to right, rgb(59,130,246), rgb(37,99,235));
+    
 }
 .accordion-content {
     padding: 15px;
@@ -173,6 +176,7 @@ footer {
     border-left: 2px solid #007bff;
     border-right: 2px solid #007bff;
     border-bottom: 2px solid #007bff;
+    
 }
 .icon {
     font-size: 1.5rem;
