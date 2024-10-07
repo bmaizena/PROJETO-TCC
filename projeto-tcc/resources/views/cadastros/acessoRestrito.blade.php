@@ -50,14 +50,14 @@
         <table >
         
             <tr>
-                <td class="titulo" style="background-color: #4169E1;">ID</td>
-                <td class="titulo" style="background-color: #FA8072;">NOME</td>
-                <td class="titulo" style="background-color: #D2691E;">TEL</td>
-                <td class="titulo" style="background-color: #F08080;" id="data">NASC</td>
-                <td class="titulo" style="background-color: #9FE2BF;">EMAIL</td>
-                <td class="titulo" style="background-color: #40E0D0;">CPF</td>
-                <td class="titulo" style="background-color: #CCCCFF;">ENDEREÇO</td>
-                <td class="titulo"style="background-color: #e5e619;" id="acoes">AÇÕES</td>
+                <td class="titulo" style="background-color: #76b0ea;">ID</td>
+                <td class="titulo" style="background-color: #76b0ea;">NOME</td>
+                <td class="titulo" style="background-color: #76b0ea;">TEL</td>
+                <td class="titulo" style="background-color: #76b0ea;" id="data">NASC</td>
+                <td class="titulo" style="background-color: #76b0ea;">EMAIL</td>
+                <td class="titulo" style="background-color: #76b0ea;">CPF</td>
+                <td class="titulo" style="background-color: #76b0ea;">ENDEREÇO</td>
+                <td class="titulo"style="background-color: #73b464;" id="acoes">AÇÕES</td>
         
             </tr>
 

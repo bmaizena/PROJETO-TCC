@@ -151,6 +151,7 @@ footer {
 
 .accordion-item {
     margin-bottom: 10px;
+    
 }
 .accordion-header {
     background-image: linear-gradient(to right, rgb(37,99,235), rgb(59,130,246));
@@ -162,9 +163,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1.9s ease
+    
 }
 .accordion-header:hover {
     background-image: linear-gradient(to right, rgb(59,130,246), rgb(37,99,235));
+    border-radius: 30px;
+    transition: 0.2s ease
+    
 }
 .accordion-content {
     padding: 15px;
@@ -173,12 +179,24 @@ footer {
     border-left: 2px solid #007bff;
     border-right: 2px solid #007bff;
     border-bottom: 2px solid #007bff;
+    border-radius: 30px 30px 30px 30px;
+    
 }
 .icon {
     font-size: 1.5rem;
-        }
+}
 
-@media (max-width: 768px) {
+#whats{
+    position: fixed;
+    bottom: 6%;
+    left: 90%;
+}
+
+#contato{
+    display: none;
+}
+
+@media (max-width: 788px) {
     nav ul {
         flex-direction: column;
     }
@@ -223,6 +241,14 @@ footer {
     #hamburger {
         display: block;
     }
+    #contato{
+        display: block;
+        width: 100px;
+        margin: auto;
+    }
+    #whats{
+        display: none;
+    }
 }
     </style>
 </head>
@@ -232,7 +258,7 @@ footer {
         
         <nav class="bg-blue-950 border-b-2 h-16">
             <ul class="pt-4" id="menu">
-                <li id="logo" class="absolute top-2 left-2"><img src="/logo-bus-cortado.png" alt="onibus" width="65px"></li>
+                <li id="logo" class="absolute top-2 left-2 animate-pulse"><img src="/logo-bus-cortado.png" alt="onibus" width="65px"></li>
                 
                 <li><a href="#home" class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">Início</a></li>
 
@@ -244,7 +270,7 @@ footer {
 
                 <li><a href="/cadastros/cadastro"  class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">Cadastro</a></li>
 
-                <li><a href="https://wa.me/5513991225846" rel="external" target="_blank" class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded ">Contato</a></li>
+                <li><a href="https://wa.me/5513991225846" rel="external" target="_blank" class=" hover:text-slate-900 hover:bg-green-500 transition duration-500 ease-in-out p-1 rounded" id="contato">Contato</a></li>
 
                 
             </ul>
@@ -253,9 +279,9 @@ footer {
         
         <section id="home" class="hero"> 
             <div>
-                <h1 class="text-9xl text-center font-semibold text-neutral-100">BUS.IO</h1>
+                <h1 class="text-9xl text-center font-semibold text-neutral-100 hover:animate-bounce hover:text-green-500">BUS.IO</h1>
                 <br>
-                <p class=" text-neutral-100 font-semibold">Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
+                <p class=" text-neutral-100 font-semibold hover:animate-bounce hover:text-green-500">Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
             </div>
         </section>
     </header>
@@ -280,28 +306,28 @@ footer {
 
         <section id="menuFunc" class="content">
         <h2>Funcionalidades</h2>
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 rounded-lg shadow-xl text-center text-slate-100">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 rounded-lg shadow-xl text-center text-slate-100 hover:rounded-3xl transition-all hover:transition-all duration-1000 ">
             <h1><b>Localização de Pontos de Ônibus</b></h1>
             <p>Os usuários podem facilmente encontrar os
                 pontos de ônibus mais próximos de sua localização atual usando o aplicativo.
             </p>
         </div>
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2  rounded-lg shadow-xl text-center  text-slate-100">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2  rounded-lg shadow-xl text-center  text-slate-100 hover:rounded-3xl transition-all hover:transition-all duration-1000 ">
             <h1><b>Consulta de Horários</b></h1>
             <p>Os horários de partida e chegada dos ônibus estão disponíveis
             para consulta, permitindo que os usuários planejem suas viagens com antecedência.
             </p>
         </div>
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl  text-slate-100">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl  text-slate-100 hover:rounded-3xl transition-all hover:transition-all duration-1000 ">
             <h1><b>Valores de Passagem</b></h1>
             <p>Os preços das passagens de ônibus são exibidos no aplicativo,
             ajudando os usuários a gerenciarem seus gastos com transporte.
             </p>
         </div>
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl text-slate-100">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl text-slate-100 hover:rounded-3xl transition-all hover:transition-all duration-1000 ">
             <h1><b>Compra de Passagem Online</b></h1>
             <p>O aplicativo oferece a conveniência de comprar
             passagens de ônibus diretamente pelo smartphone, eliminando a necessidade
@@ -309,7 +335,7 @@ footer {
             </p>
         </div>
 
-        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl  text-slate-100">
+        <div class="w-auto h-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 m-3 p-2 text-center rounded-lg shadow-xl  text-slate-100 hover:rounded-3xl transition-all hover:transition-all duration-1000 ">
             <h1><b>Passe Mensal</b></h1>
             <p> Os usuários têm a opção de carregar um passe mensal, válido para
             uso em qualquer ônibus de qualquer cidade atendida pelo serviço, proporcionando
@@ -334,7 +360,7 @@ footer {
                 Cadastro e Login
                 <span class="icon">+</span>
             </div>
-            <div class="accordion-content">
+            <div class="accordion-content" >
                 <li>Ao abrir o app pela primeira vez, crie uma conta com seu e-mail ou vincule seu login com redes sociais.</li>  <li>Após o cadastro, faça login para acessar todas as funcionalidades.</li>
             </div>
         </div>
@@ -345,7 +371,7 @@ footer {
                 Localização de Pontos de Ônibus
                 <span class="icon">+</span>
             </div>
-            <div class="accordion-content">
+            <div class="accordion-content" >
             <li><b>Acesse o Mapa:</b> Na tela inicial, clique no ícone de mapa.</li>
             <li>O aplicativo usará a localização GPS do seu smartphone para identificar os pontos de ônibus mais próximos.</li>
             <li>Clique em um ponto de ônibus no mapa para ver os horários e rotas dos ônibus que passam por ali.</li>
@@ -419,6 +445,8 @@ footer {
         
 
     </main>
+
+    <a href="https://wa.me/5513991225846" rel="external" target="_blank"><img src="/wpp.png" width="90px" alt="whatsapp" class="animate-bounce" id="whats"></a>
 
     <footer>
         <p>Copyright &copy; 2024. Todos os direitos reservados.</p>

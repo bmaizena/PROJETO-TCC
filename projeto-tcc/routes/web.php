@@ -13,6 +13,7 @@ Route::post('/cadastros/recCadastro', [TccController::class, 'recCadastro']);
 Route::get('/cadastros/recRestrito', [TccController::class, 'recRestrito']);
 
 Route::delete('/cadastros/{id}', [TccController::class, 'destroy'])->name('cadastros.destroy');
+
 Route::get('/cadastros/acessoRestrito', [TccController::class, 'acessoRestrito']);
 
 Route::get('/cadastros/{id}', [TccController::class, 'edit'])->name('cadastros.edit');

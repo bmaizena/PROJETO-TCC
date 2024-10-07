@@ -62,15 +62,15 @@ public function recCadastro(Request $request){
 
 public function recRestrito(Request $request){
 
-    $tcctasks = BusioClientes::where('senha', 'IN', "%projetotcc%") 
-    ->where('nome', 'IN', "%danielsallesse@gmail.com%")
+    $tcctasks = BusioClientes::where('senha', 'LIKE', "%projetotcc%") 
+    ->where('email', 'LIKE', "%danielsallesse@gmail.com%")
     ->get();
     $txtSenha = $request->senha;
-    $txtNome = $request->nome;
+    $txtEmail = $request->email;
 
     $clientes=BusioClientes::all();
 
-    return view('/cadastros/acessoRestrito', compact(['tcctasks','txtSenha','txtNome', 'clientes']));
+    return view('/cadastros/acessoRestrito', compact(['tcctasks','txtSenha','txtEmail', 'clientes']));
 }
 
 public function destroy($id){
