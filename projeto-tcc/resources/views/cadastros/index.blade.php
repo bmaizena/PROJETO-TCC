@@ -163,13 +163,19 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     transition: 1.9s ease
+=======
+>>>>>>> 1ec2d3c360c5b57c315653abad42f42394fbaf46
     
 }
 .accordion-header:hover {
     background-image: linear-gradient(to right, rgb(59,130,246), rgb(37,99,235));
+<<<<<<< HEAD
     border-radius: 30px;
     transition: 0.2s ease
+=======
+>>>>>>> 1ec2d3c360c5b57c315653abad42f42394fbaf46
     
 }
 .accordion-content {
@@ -179,7 +185,10 @@ footer {
     border-left: 2px solid #007bff;
     border-right: 2px solid #007bff;
     border-bottom: 2px solid #007bff;
+<<<<<<< HEAD
     border-radius: 30px 30px 30px 30px;
+=======
+>>>>>>> 1ec2d3c360c5b57c315653abad42f42394fbaf46
     
 }
 .icon {
