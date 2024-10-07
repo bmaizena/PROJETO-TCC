@@ -64,7 +64,6 @@ nav ul li a {
     margin-bottom: 1rem;
     text-shadow: black 1px 0 20px;
     
-    
 }
 
 .hero p {
@@ -163,12 +162,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    transition: 1.9s;
     
 }
 .accordion-header:hover {
     background-image: linear-gradient(to right, rgb(59,130,246), rgb(37,99,235));
-
+    border-radius: 20px;
+    transition: 0.3s;
 
     
 }
@@ -179,7 +179,7 @@ footer {
     border-left: 2px solid #007bff;
     border-right: 2px solid #007bff;
     border-bottom: 2px solid #007bff;
-
+    border-radius: 20px;
     
 }
 .icon {
