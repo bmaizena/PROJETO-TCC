@@ -13,7 +13,7 @@
     <main class="flex justify-center">
         <section class="bg-zinc-200 mt-20 w-3/4 p-4 shadow-lg shadow-indigo-200/50 rounded-lg ">
 
-        <h1 class="text-2xl text-amber-900">Editar Dados</h1>
+        <h1 class="text-2xl text-blue-500">Editar Dados</h1>
 
         <hr class="mb-2 mt-2">
 
@@ -22,7 +22,7 @@
                 @method('PUT')
 
                 <div class="mt-4 flex flex-col">
-                    <label for="nome" class="text-amber-900">Nome:</label>
+                    <label for="nome" class="text-blue-900">Nome:</label>
                     <input type="text" name="nome" id="nome" class="rounded-md border border-neutral-900 p-2" value="{{ @old('nome', $clientes->nome) }}">
                     @error('nome')
                         <p class="text-muted text-red-400">{{ $message }}</p>
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="mt-4 flex flex-col">
-                    <label for="dt_nasc" class="text-amber-900">Data de Nascimento:</label>
+                    <label for="dt_nasc" class="text-blue-900">Data de Nascimento:</label>
                     <input type="dt_nasc" name="dt_nasc" id="dt_nasc" class="rounded-md border border-neutral-900 p-2" value="{{ @old('dt_nasc', $clientes->dt_nasc) }}">
                     @error('dt_nasc')
                         <p class="text-muted text-red-400">{{ $message }}</p>
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="mt-4 flex flex-col">
-                    <label for="email" class="text-amber-900">Email:</label>
+                    <label for="email" class="text-blue-900">Email:</label>
                     <input type="email" name="email" id="email" class="rounded-md border border-neutral-900 p-2" value="{{ @old('email', $clientes->email) }}">
                     @error('email')
                         <p class="text-muted text-red-400">{{ $message }}</p>
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="mt-4 flex flex-col">
-                    <label for="telefone" class="text-amber-900">Telefone:</label>
+                    <label for="telefone" class="text-blue-900">Telefone:</label>
                     <input type="telefone" name="telefone" id="telefone" class="rounded-md border border-neutral-900 p-2" value="{{ @old('telefone', $clientes->telefone) }}">
                     @error('telefone')
                         <p class="text-muted text-red-400">{{ $message }}</p>
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="mt-4 flex flex-col">
-                    <label for="endereco" class="text-amber-900">Endereço:</label>
+                    <label for="endereco" class="text-blue-900">Endereço:</label>
                     <input type="endereco" name="endereco" id="endereco" class="rounded-md border border-neutral-900 p-2" value="{{ @old('endereco', $clientes->endereco) }}">
                     @error('endereco')
                         <p class="text-muted text-red-400">{{ $message }}</p>
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="mt-4 flex flex-col">
-                    <label for="cpf" class="text-amber-900">CPF:</label>
+                    <label for="cpf" class="text-blue-900">CPF:</label>
                     <input type="cpf" name="cpf" id="cpf" class="rounded-md border border-neutral-900 p-2" value="{{ @old('cpf', $clientes->cpf) }}">
                     @error('cpf')
                         <p class="text-muted text-red-400">{{ $message }}</p>

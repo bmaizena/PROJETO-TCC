@@ -25,7 +25,7 @@
         <p class="font-thin text-lg text-slate-50 ml-1">Seu ônibus na palma da sua mão</p>
     </div>
     <div id="imagem"class="absolute top-12 left-10">
-        <img src="/bus.io.png" alt="bus" class="w-10/12 ml-1 mt-2">
+        <img src="/bus.io.png" alt="bus" class="w-10/12 ml-1 mt-2 animate-pulse">
     </div>
 
     <div class="absolute bottom-2 left-2 abosolute" id="acess">
@@ -52,6 +52,7 @@
     
     
         <input type="number" name="cpf" id="cpf" placeholder="CPF" required class="m-1 p-1 rounded-lg border border-zinc-500 w-4/6 self-center">
+        
     
     
         <input type="password" name="senha" id="senha" placeholder="Senha" required class="m-1 p-1 rounded-lg border border-zinc-500 w-4/6 self-center">
