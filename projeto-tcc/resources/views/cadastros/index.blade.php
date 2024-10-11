@@ -279,9 +279,9 @@ footer {
         
         <section id="home" class="hero"> 
             <div>
-                <h1 class="text-9xl text-center font-semibold text-neutral-100 hover:animate-bounce hover:text-green-500">BUS.IO</h1>
+                <h1 class="text-9xl text-center font-semibold text-neutral-100 hover:text-green-500">BUS.IO</h1>
                 <br>
-                <p class=" text-neutral-100 font-semibold hover:animate-bounce hover:text-green-500">Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
+                <p class=" text-neutral-100 font-semibold  hover:text-green-500">Explore nossa jornada e saiba mais sobre o desenvolvimento deste projeto.</p>
             </div>
         </section>
     </header>
